@@ -1,0 +1,83 @@
+.contact {
+    max-height: 300px;
+    background-color: #495567;
+    padding: 102px 165px;
+}
+.contact-main {
+    display: flex;
+     justify-content: space-between;  
+}
+.contact-text h2 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #ffffff;
+    max-width: 415px;
+    max-height: 96px;
+}
+.btn{
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+.contact-btn {
+    background-color: #e5ecf4;
+    padding: 9px 16px;
+    max-width: 159px;
+    max-height: 56px;
+    border-radius: 4px;
+}
+.contact-btn2 {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+    background-color: #e5ecf4;
+    padding: 9px 16px;
+    max-width: 159px;
+    max-height: 56px;
+    border-radius: 4px;
+}
+.apple-btn {
+    display: flex;
+    column-gap: 11px;
+}
+.btn-text h4 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;
+}
+.btn-text h3 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+}
+@include for-tab{
+    .contact{
+        padding: 104px 0;
+    }
+    .contact-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-text{
+        text-align: center;
+    }
+    .btn{
+        margin-top: 40px;
+        display: flex;
+        column-gap: 18px;
+    }
+}

@@ -1,0 +1,116 @@
+.go-container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+.go-to-city{
+    overflow: hidden;
+}
+
+.wrapper__main {
+    font-family: $heading-fonts;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark-grey;
+    max-width: 445px;
+}
+.wrapper__p {
+    padding-top: 24px;
+    max-width: 445px;
+    max-height: 100px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+}
+.wrapper__btn {
+    margin-top: 40px;
+    max-width: 180px;
+    max-height: 53px;
+    padding: 14px 39px;
+    border: none;
+    background-color: $yellow;
+    font-family: $heading-fonts;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+.wrapper__btn:hover {
+    transition: 0.5s;
+    background-color: $snow;
+    transition: 0.5s;
+    color: $dark-grey;
+}
+.main {
+    display: flex;
+    column-gap: 220px;
+}
+.images {
+    position: relative;
+}
+.line-middle2{
+    position: absolute;
+    left: -305px;
+    background-image: url(../../images/line-middle2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 734.38px;
+    min-height: 99.37px;
+}
+.left-circle{
+    position: absolute;
+    background-image: url(../../images/left-circle.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width:445px;
+    min-height: 445px;
+    left: -350px;
+}
+.city {
+    border-radius: 50%;
+    z-index: -1;
+}
+@include for-tab{
+    .main{
+        text-align: center;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .texts{
+        margin-top: 50px;
+    }
+}
+@include for-middle{
+    .city{
+        max-width: 311px;
+        max-height: 311px;
+    }
+}
+@include for-mobile{
+    
+    .line-middle2{
+        top: 50px;
+        left: -250px;
+    }
+    .wrapper__main{
+        max-width: 311px;
+        max-height: 64px;
+    }
+    .wrapper__p{
+        max-width: 311px;
+        max-height: 150px;
+        margin-top: 100px;
+    }
+}

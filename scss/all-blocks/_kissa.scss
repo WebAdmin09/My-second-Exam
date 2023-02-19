@@ -1,0 +1,29 @@
+.kissa-type{
+    overflow: hidden;
+    margin-top: 150px;
+}
+.line-middle3{
+    position: absolute;
+    top: 0;
+    left: 250px;
+    background-image: url(../../images/end-line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@include for-large-head{
+    .line-middle3{
+        left: 0;
+    }
+}
+@include for-tab{
+    .line-middle3{
+        left: -350px;
+    }
+}
+@include for-large-tablet{
+    .wrp2{
+        margin-top: 250px;
+    }
+
+}

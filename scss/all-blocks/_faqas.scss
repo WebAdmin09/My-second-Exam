@@ -1,0 +1,62 @@
+.faqs {
+    margin-top: 150px;
+    position: relative;
+}
+.faqs h2 {
+    position: absolute;
+    top: -50px;
+    left: 650px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.how-it-work {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.how-text h3 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: #495567;
+    min-width: 350px;
+    min-height: 48px;
+}
+.how-infor{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.first-infor {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f5f9;
+    padding: 32px 40px;
+    row-gap: 24px;
+}
+.first-infor h4 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.first-infor p {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}

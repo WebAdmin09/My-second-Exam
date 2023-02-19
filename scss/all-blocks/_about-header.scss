@@ -1,0 +1,38 @@
+.katta-container {
+    padding-top: 50px;
+    background-image: url(../../images/bgabout.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    max-width: 1500px;
+    overflow-x: hidden;
+    z-index: -1;
+}
+.header{
+    display: flex;
+    padding-left: 50px;
+}
+.header-h1 {
+    padding-top: 80px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+}
+@include for-middle{
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+}
+@include for-mobile{
+    .scoot-type2{
+        margin-top: -100px;
+    }
+}

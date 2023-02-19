@@ -1,0 +1,38 @@
+@import "../scss/fonts";
+@import "../scss/mixins";
+@import "../scss/variables";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.big-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.katta-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.span-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.type-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.go-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body {
+    overflow-x: hidden;
+}
+@import "./all-blocks/allblocks";

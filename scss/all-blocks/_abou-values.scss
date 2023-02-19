@@ -1,0 +1,122 @@
+.our-values{
+    margin-top: 100px;
+    overflow: hidden;
+}
+.about-cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-cards-h2 {
+    position: absolute;
+    top: -50px;
+    left: 450px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.about-card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-about-card1 {
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+}
+.about-card-text {
+    max-width: 350px;
+    max-height: 130px;
+}
+.about-card-text h4 {
+    margin-top: 24px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+.about-card-text p {
+    margin-top: 27px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939caa;
+}
+@include for-large-head{
+    .our-values{
+        max-width: 950px;
+        max-height: 700px;
+    }
+}
+@include for-tab{
+    .about-cards-h2{
+        left: 320px;
+        max-width: 457px;
+        max-height: 48px;
+    }
+    .about-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 139px;
+    }
+    .about-card-text{
+        min-width: 457px;
+        min-height: 75px;
+    }
+}
+@include for-large-tablet{
+    .about-cards-h2{
+        left: 250px;
+    }
+}
+@include for-left-card{
+    .about-cards-h2{
+        left: 150px;
+    }
+}
+@include for-mobile{
+    .about-card-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-cards-h2{
+        max-width: 200px;
+        max-height:32px ;
+        left: 150px;
+    }
+    .about-card-text p{
+        max-width: 311px;
+        max-height: 100px;
+    }
+}
+@include for-large-mobile{
+    .about-cards-h2{
+        left: 100px;
+    }
+}
+@include for-middle-mobile{
+    .about-cards-h2{
+        left: 50px;
+    }
+}
+@include for-end-mobile{
+    .about-cards-h2{
+        left: 50px;
+    }
+}

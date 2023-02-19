@@ -1,0 +1,147 @@
+nav {
+    padding: 22px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 58px;
+    max-width: 1106px;
+    max-height: 53px;
+    @include for-large-tablet(){
+        .menu {
+            max-width: 450px;
+            max-height: 29px;
+            &__btn {
+                max-width: 110px;
+                max-height: 41px;
+                white-space: nowrap;
+                padding-left: 15px;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+
+    @include for-mobile(){
+        .menu {
+            display: none;  
+            width: 256px;
+            background-color: #333a44;
+            min-height: 100vh;
+            position: fixed;
+            justify-content: center;
+            left: 100%;
+            top: 78px;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            &__ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                margin-bottom: 150px;
+            }
+            &__btn {
+                position: absolute;
+                bottom: 100px;
+                padding: 14px 39px;
+                font-size: 15px;
+                max-width: 192px;
+                max-height: 53px;
+            }
+        }
+        .navbar {
+            column-gap: 20px;
+            position: relative;
+        }
+        .navbar__item input {
+            display: none;
+            position: absolute;
+            left: 32px;
+        }
+        .check {
+            display: block;
+            & {
+                position: absolute;
+                top: 15px;
+                left: 32px;
+            }
+        }
+    }
+}
+.navbar__logo {
+    max-width: 107.82px;
+    max-height: 28.56px;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__ul {
+        display: flex;
+        column-gap: 32px;
+        max-width: 249px;
+        max-height: 25px;
+        &-li {
+            @include centertext;
+            justify-content: center;
+            &-link {
+                font-family: $paragraph-fonts;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: $grey;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+            &-link:hover {
+                transform: scale(1.1);
+                transition: 0.5s;
+                color: $yellow;
+            }
+        }
+    }
+    &__btn {
+        padding: 14px 39px;
+        border: none;
+        background-color: $yellow;
+        font-family: $heading-fonts;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        cursor: pointer;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+    &__btn:hover {
+        background-color: $snow;
+        transition: 0.5s;
+        color: $dark-grey;
+    }
+}
+.check {
+    display: none;
+    &__span {
+        display: flex;
+        flex-direction: column;
+        background-color: $yellow;
+        width: 19px;
+        height: 3px;
+        margin-top: 3px;
+    }
+}
+.navbar__item input {
+    display: none;
+}
+.check:checked~.menu{
+    left: 0;
+}

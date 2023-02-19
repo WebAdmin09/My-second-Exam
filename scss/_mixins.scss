@@ -1,0 +1,64 @@
+@mixin centertext() {
+    display: flex;
+    align-items: center;
+}
+@mixin centeritems {
+    display: flex;
+    justify-content: center;
+}
+@mixin for-header() {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+@mixin for-large-head() {
+    @media screen and (max-width:1040px) {
+        @content;
+    }
+}
+@mixin for-large-tablet (){
+    @media screen and (max-width:800px) {
+        @content;
+    }
+}
+@mixin for-mobile() {
+    @media screen and (max-width:576px) {
+        @content;
+    }
+}
+
+@mixin for-tab() {
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+@mixin for-card() {
+    @media screen and (max-width:860px) {
+        @content;
+    }
+}
+@mixin for-middle(){
+    @media screen and (max-width:720px) {
+        @content;
+    }
+}
+@mixin for-left-card() {
+    @media screen and (max-width:640px) {
+        @content;
+    }
+}
+@mixin for-large-mobile() {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+@mixin for-middle-mobile() {
+    @media screen and (max-width:450px) {
+        @content;
+    }
+}
+@mixin for-end-mobile() {
+    @media screen and (max-width:350px) {
+        @content;
+    }
+}
